@@ -1,0 +1,16 @@
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Presentacion.exe.config
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Presentacion.exe
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Presentacion.pdb
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmDashboard.resources
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmDevoluciones.resources
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmLibros.resources
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.FrmLogin.resources
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmPrestamos.resources
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmProfesores.resources
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmReportes.resources
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.Properties.Resources.resources
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.exe
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.pdb
