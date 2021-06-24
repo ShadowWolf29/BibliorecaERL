@@ -46,7 +46,7 @@ namespace ProyectoBiblitecaERL
             this.ImgBoxLogin.Image = ((System.Drawing.Image)(resources.GetObject("ImgBoxLogin.Image")));
             this.ImgBoxLogin.Location = new System.Drawing.Point(-3, 1);
             this.ImgBoxLogin.Name = "ImgBoxLogin";
-            this.ImgBoxLogin.Size = new System.Drawing.Size(475, 461);
+            this.ImgBoxLogin.Size = new System.Drawing.Size(407, 400);
             this.ImgBoxLogin.TabIndex = 0;
             this.ImgBoxLogin.TabStop = false;
             this.ImgBoxLogin.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -54,9 +54,9 @@ namespace ProyectoBiblitecaERL
             // LblLogin
             // 
             this.LblLogin.AutoSize = true;
-            this.LblLogin.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblLogin.Font = new System.Drawing.Font("Segoe UI", 24F);
             this.LblLogin.ForeColor = System.Drawing.Color.White;
-            this.LblLogin.Location = new System.Drawing.Point(607, 74);
+            this.LblLogin.Location = new System.Drawing.Point(520, 64);
             this.LblLogin.Name = "LblLogin";
             this.LblLogin.Size = new System.Drawing.Size(204, 45);
             this.LblLogin.TabIndex = 1;
@@ -65,51 +65,53 @@ namespace ProyectoBiblitecaERL
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtEmail.Location = new System.Drawing.Point(505, 188);
+            this.TxtEmail.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.TxtEmail.Location = new System.Drawing.Point(433, 163);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(417, 39);
+            this.TxtEmail.Size = new System.Drawing.Size(358, 39);
             this.TxtEmail.TabIndex = 2;
             // 
             // LblEmail
             // 
             this.LblEmail.AutoSize = true;
-            this.LblEmail.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblEmail.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.LblEmail.ForeColor = System.Drawing.Color.White;
-            this.LblEmail.Location = new System.Drawing.Point(505, 147);
+            this.LblEmail.Location = new System.Drawing.Point(433, 127);
             this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(203, 32);
+            this.LblEmail.Size = new System.Drawing.Size(204, 32);
             this.LblEmail.TabIndex = 3;
             this.LblEmail.Text = "Ingrese su correo:";
             // 
             // LblPassword
             // 
             this.LblPassword.AutoSize = true;
-            this.LblPassword.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblPassword.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.LblPassword.ForeColor = System.Drawing.Color.White;
-            this.LblPassword.Location = new System.Drawing.Point(505, 241);
+            this.LblPassword.Location = new System.Drawing.Point(433, 209);
             this.LblPassword.Name = "LblPassword";
-            this.LblPassword.Size = new System.Drawing.Size(251, 32);
+            this.LblPassword.Size = new System.Drawing.Size(252, 32);
             this.LblPassword.TabIndex = 4;
             this.LblPassword.Text = "Ingrese su contraseña:";
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtPassword.Location = new System.Drawing.Point(505, 276);
+            this.TxtPassword.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.TxtPassword.Location = new System.Drawing.Point(433, 239);
             this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(417, 39);
+            this.TxtPassword.PasswordChar = '*';
+            this.TxtPassword.Size = new System.Drawing.Size(358, 39);
             this.TxtPassword.TabIndex = 5;
+            this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // BtnLogin
             // 
             this.BtnLogin.BackColor = System.Drawing.Color.Teal;
             this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnLogin.ForeColor = System.Drawing.Color.White;
-            this.BtnLogin.Location = new System.Drawing.Point(810, 352);
+            this.BtnLogin.Location = new System.Drawing.Point(694, 305);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(112, 45);
+            this.BtnLogin.Size = new System.Drawing.Size(96, 39);
             this.BtnLogin.TabIndex = 6;
             this.BtnLogin.Text = "Ingresar";
             this.BtnLogin.UseVisualStyleBackColor = false;
@@ -117,10 +119,10 @@ namespace ProyectoBiblitecaERL
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.ClientSize = new System.Drawing.Size(934, 461);
+            this.ClientSize = new System.Drawing.Size(801, 400);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.LblPassword);

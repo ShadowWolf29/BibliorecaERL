@@ -14,3 +14,26 @@ C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\Bi
 C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.exe
 C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Presentacion.exe.config
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Presentacion.exe
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Presentacion.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.AssemblyReference.cache
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmDashboard.resources
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmDevoluciones.resources
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmLibros.resources
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.FrmLogin.resources
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmPrestamos.resources
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmProfesores.resources
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\ProyectoBiblitecaERL.Vistas.FrmReportes.resources
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.Properties.Resources.resources
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.GenerateResource.cache
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.exe
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Negocio.dll
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Datos.dll
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Entidades.dll
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Negocio.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Datos.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Entidades.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.CopyComplete

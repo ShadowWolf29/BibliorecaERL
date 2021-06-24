@@ -1,0 +1,6 @@
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Entidades\bin\Debug\BibliotecaERL.Entidades.dll
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Entidades\bin\Debug\BibliotecaERL.Entidades.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Entidades\obj\Debug\BibliotecaERL.Entidades.csproj.AssemblyReference.cache
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Entidades\obj\Debug\BibliotecaERL.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Entidades\obj\Debug\BibliotecaERL.Entidades.dll
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Entidades\obj\Debug\BibliotecaERL.Entidades.pdb

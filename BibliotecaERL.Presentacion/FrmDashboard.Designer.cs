@@ -41,6 +41,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BtnProfesores = new System.Windows.Forms.Button();
             this.BtnDevoluciones = new System.Windows.Forms.Button();
             this.BtnReportes = new System.Windows.Forms.Button();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).BeginInit();
             this.SuspendLayout();
@@ -48,9 +49,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // LblInicio
             // 
             this.LblInicio.AutoSize = true;
-            this.LblInicio.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblInicio.Font = new System.Drawing.Font("Segoe UI", 20.25F);
             this.LblInicio.ForeColor = System.Drawing.Color.White;
-            this.LblInicio.Location = new System.Drawing.Point(44, 56);
+            this.LblInicio.Location = new System.Drawing.Point(38, 49);
             this.LblInicio.Name = "LblInicio";
             this.LblInicio.Size = new System.Drawing.Size(81, 37);
             this.LblInicio.TabIndex = 1;
@@ -60,11 +61,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // LblUserName
             // 
             this.LblUserName.AutoSize = true;
-            this.LblUserName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblUserName.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.LblUserName.ForeColor = System.Drawing.Color.White;
-            this.LblUserName.Location = new System.Drawing.Point(538, 10);
+            this.LblUserName.Location = new System.Drawing.Point(418, 5);
             this.LblUserName.Name = "LblUserName";
-            this.LblUserName.Size = new System.Drawing.Size(202, 32);
+            this.LblUserName.Size = new System.Drawing.Size(203, 32);
             this.LblUserName.TabIndex = 2;
             this.LblUserName.Text = "Carlos Quintanilla";
             this.LblUserName.Click += new System.EventHandler(this.label1_Click_1);
@@ -77,16 +78,16 @@ namespace ProyectoBiblitecaERL.Vistas
             this.panel1.Controls.Add(this.LblUserName);
             this.panel1.Location = new System.Drawing.Point(1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(810, 54);
+            this.panel1.Size = new System.Drawing.Size(694, 47);
             this.panel1.TabIndex = 3;
             // 
             // ImgUser
             // 
             this.ImgUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ImgUser.Image = ((System.Drawing.Image)(resources.GetObject("ImgUser.Image")));
-            this.ImgUser.Location = new System.Drawing.Point(746, 0);
+            this.ImgUser.Location = new System.Drawing.Point(648, 3);
             this.ImgUser.Name = "ImgUser";
-            this.ImgUser.Size = new System.Drawing.Size(50, 50);
+            this.ImgUser.Size = new System.Drawing.Size(43, 43);
             this.ImgUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgUser.TabIndex = 4;
             this.ImgUser.TabStop = false;
@@ -95,9 +96,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // 
             this.LblBibliotecaName.AutoSize = true;
             this.LblBibliotecaName.BackColor = System.Drawing.Color.Teal;
-            this.LblBibliotecaName.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblBibliotecaName.Font = new System.Drawing.Font("Segoe UI", 21.75F);
             this.LblBibliotecaName.ForeColor = System.Drawing.Color.White;
-            this.LblBibliotecaName.Location = new System.Drawing.Point(11, 6);
+            this.LblBibliotecaName.Location = new System.Drawing.Point(9, 5);
             this.LblBibliotecaName.Name = "LblBibliotecaName";
             this.LblBibliotecaName.Size = new System.Drawing.Size(192, 40);
             this.LblBibliotecaName.TabIndex = 3;
@@ -107,11 +108,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // BtnLibros
             // 
             this.BtnLibros.BackColor = System.Drawing.Color.Teal;
-            this.BtnLibros.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnLibros.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnLibros.ForeColor = System.Drawing.Color.White;
-            this.BtnLibros.Location = new System.Drawing.Point(159, 134);
+            this.BtnLibros.Location = new System.Drawing.Point(136, 116);
             this.BtnLibros.Name = "BtnLibros";
-            this.BtnLibros.Size = new System.Drawing.Size(174, 76);
+            this.BtnLibros.Size = new System.Drawing.Size(149, 66);
             this.BtnLibros.TabIndex = 4;
             this.BtnLibros.Text = "LIBROS";
             this.BtnLibros.UseVisualStyleBackColor = false;
@@ -120,11 +121,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // BtnVideos
             // 
             this.BtnVideos.BackColor = System.Drawing.Color.Teal;
-            this.BtnVideos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnVideos.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnVideos.ForeColor = System.Drawing.Color.White;
-            this.BtnVideos.Location = new System.Drawing.Point(159, 248);
+            this.BtnVideos.Location = new System.Drawing.Point(136, 215);
             this.BtnVideos.Name = "BtnVideos";
-            this.BtnVideos.Size = new System.Drawing.Size(174, 76);
+            this.BtnVideos.Size = new System.Drawing.Size(149, 66);
             this.BtnVideos.TabIndex = 5;
             this.BtnVideos.Text = "VIDEOS";
             this.BtnVideos.UseVisualStyleBackColor = false;
@@ -132,11 +133,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // BtnPrestamos
             // 
             this.BtnPrestamos.BackColor = System.Drawing.Color.Teal;
-            this.BtnPrestamos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnPrestamos.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnPrestamos.ForeColor = System.Drawing.Color.White;
-            this.BtnPrestamos.Location = new System.Drawing.Point(496, 134);
+            this.BtnPrestamos.Location = new System.Drawing.Point(425, 116);
             this.BtnPrestamos.Name = "BtnPrestamos";
-            this.BtnPrestamos.Size = new System.Drawing.Size(174, 76);
+            this.BtnPrestamos.Size = new System.Drawing.Size(149, 66);
             this.BtnPrestamos.TabIndex = 6;
             this.BtnPrestamos.Text = "PRESTAMOS";
             this.BtnPrestamos.UseVisualStyleBackColor = false;
@@ -145,11 +146,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // BtnProfesores
             // 
             this.BtnProfesores.BackColor = System.Drawing.Color.Teal;
-            this.BtnProfesores.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnProfesores.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnProfesores.ForeColor = System.Drawing.Color.White;
-            this.BtnProfesores.Location = new System.Drawing.Point(159, 365);
+            this.BtnProfesores.Location = new System.Drawing.Point(136, 316);
             this.BtnProfesores.Name = "BtnProfesores";
-            this.BtnProfesores.Size = new System.Drawing.Size(174, 76);
+            this.BtnProfesores.Size = new System.Drawing.Size(149, 66);
             this.BtnProfesores.TabIndex = 9;
             this.BtnProfesores.Text = "PROFESORES";
             this.BtnProfesores.UseVisualStyleBackColor = false;
@@ -158,11 +159,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // BtnDevoluciones
             // 
             this.BtnDevoluciones.BackColor = System.Drawing.Color.Teal;
-            this.BtnDevoluciones.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnDevoluciones.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnDevoluciones.ForeColor = System.Drawing.Color.White;
-            this.BtnDevoluciones.Location = new System.Drawing.Point(496, 248);
+            this.BtnDevoluciones.Location = new System.Drawing.Point(425, 215);
             this.BtnDevoluciones.Name = "BtnDevoluciones";
-            this.BtnDevoluciones.Size = new System.Drawing.Size(174, 76);
+            this.BtnDevoluciones.Size = new System.Drawing.Size(149, 66);
             this.BtnDevoluciones.TabIndex = 8;
             this.BtnDevoluciones.Text = "DEVOLUCIONES";
             this.BtnDevoluciones.UseVisualStyleBackColor = false;
@@ -171,22 +172,33 @@ namespace ProyectoBiblitecaERL.Vistas
             // BtnReportes
             // 
             this.BtnReportes.BackColor = System.Drawing.Color.Teal;
-            this.BtnReportes.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnReportes.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnReportes.ForeColor = System.Drawing.Color.White;
-            this.BtnReportes.Location = new System.Drawing.Point(496, 365);
+            this.BtnReportes.Location = new System.Drawing.Point(425, 316);
             this.BtnReportes.Name = "BtnReportes";
-            this.BtnReportes.Size = new System.Drawing.Size(174, 76);
+            this.BtnReportes.Size = new System.Drawing.Size(149, 66);
             this.BtnReportes.TabIndex = 7;
             this.BtnReportes.Text = "REPORTES";
             this.BtnReportes.UseVisualStyleBackColor = false;
             this.BtnReportes.Click += new System.EventHandler(this.BtnReportes_Click);
             // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Location = new System.Drawing.Point(588, 408);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(80, 23);
+            this.BtnCerrar.TabIndex = 10;
+            this.BtnCerrar.Text = "Cerrar sesion";
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // FrmDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.ClientSize = new System.Drawing.Size(806, 511);
+            this.ClientSize = new System.Drawing.Size(691, 443);
+            this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.BtnProfesores);
             this.Controls.Add(this.BtnDevoluciones);
             this.Controls.Add(this.BtnReportes);
@@ -219,5 +231,6 @@ namespace ProyectoBiblitecaERL.Vistas
         private System.Windows.Forms.Button BtnProfesores;
         private System.Windows.Forms.Button BtnDevoluciones;
         private System.Windows.Forms.Button BtnReportes;
+        private System.Windows.Forms.Button BtnCerrar;
     }
 }

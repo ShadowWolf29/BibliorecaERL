@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ProyectoBiblitecaERL.FrmLogin;
 
 namespace ProyectoBiblitecaERL.Vistas
 {
@@ -39,7 +40,7 @@ namespace ProyectoBiblitecaERL.Vistas
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            LblUserName.Text = Global.nombre;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -73,6 +74,13 @@ namespace ProyectoBiblitecaERL.Vistas
         private void BtnReportes_Click(object sender, EventArgs e)
         {
             FrmReportes frm = new FrmReportes();
+            frm.Show();
+            this.Close();
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            FrmLogin frm = new FrmLogin();
             frm.Show();
             this.Close();
         }

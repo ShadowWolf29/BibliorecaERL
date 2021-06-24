@@ -1,0 +1,9 @@
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\bin\Debug\BibliotecaERL.Datos.dll
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\bin\Debug\BibliotecaERL.Datos.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\obj\Debug\BibliotecaERL.Datos.csproj.AssemblyReference.cache
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\obj\Debug\BibliotecaERL.Datos.csproj.CoreCompileInputs.cache
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\obj\Debug\BibliotecaERL.Datos.dll
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\obj\Debug\BibliotecaERL.Datos.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\bin\Debug\BibliotecaERL.Entidades.dll
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\bin\Debug\BibliotecaERL.Entidades.pdb
+C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Datos\obj\Debug\BibliotecaERL.Datos.csproj.CopyComplete
