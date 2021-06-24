@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoBiblitecaERL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,11 +17,11 @@ namespace BibliotecaERL.Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmLogin());
 
-            //FrmLogin main = new FrmLogin();
-            //main.FormClosed += MainForm_Closed;
-            //main.Show();
+            FrmLogin main = new FrmLogin();
+            main.FormClosed += MainForm_Closed;
+            main.Show();
             Application.Run();
         }
         private static void MainForm_Closed(object sender, FormClosedEventArgs e)
