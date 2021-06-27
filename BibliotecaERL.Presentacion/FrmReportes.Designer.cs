@@ -56,6 +56,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BtnPrestamos.TabIndex = 14;
             this.BtnPrestamos.Text = "PRESTAMOS";
             this.BtnPrestamos.UseVisualStyleBackColor = false;
+            this.BtnPrestamos.Click += new System.EventHandler(this.BtnPrestamos_Click);
             // 
             // BtnLibros
             // 
@@ -68,6 +69,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BtnLibros.TabIndex = 12;
             this.BtnLibros.Text = "LIBROS";
             this.BtnLibros.UseVisualStyleBackColor = false;
+            this.BtnLibros.Click += new System.EventHandler(this.BtnLibros_Click);
             // 
             // panel1
             // 

@@ -37,6 +37,31 @@ namespace BibliotecaERL.Datos
             }
         }
 
+        public DataTable Listar_disponible()
+        {
+            SqlDataReader Resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("libros_listar_disponible", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                SqlCon.Open();
+                Resultado = Comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                return Tabla;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
+
         public DataTable Buscar(string Valor)
         {
             SqlDataReader Resultado;
@@ -46,6 +71,32 @@ namespace BibliotecaERL.Datos
             {
                 SqlCon = Conexion.getInstancia().CrearConexion();
                 SqlCommand Comando = new SqlCommand("libros_buscar", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@valor", SqlDbType.VarChar).Value = Valor;
+                SqlCon.Open();
+                Resultado = Comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                return Tabla;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
+
+        public DataTable Buscar_disponible(string Valor)
+        {
+            SqlDataReader Resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("libros_buscar_disponible", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("@valor", SqlDbType.VarChar).Value = Valor;
                 SqlCon.Open();
@@ -122,6 +173,55 @@ namespace BibliotecaERL.Datos
                 Comando.Parameters.Add("@ubicacion", SqlDbType.VarChar).Value = Obj.ubicacion;
                 Comando.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = Obj.descripcion;
                 Comando.Parameters.Add("@editorial", SqlDbType.VarChar).Value = Obj.editorial;
+                SqlCon.Open();
+                Rpta = Comando.ExecuteNonQuery() == 1 ? "OK" : "No se puedo actualizar";
+            }
+            catch (Exception ex)
+            {
+                Rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return Rpta;
+        }
+
+        public string ActualizarCantidad(int Id)
+        {
+            string Rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("ejemplares_actualizar", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@id_libro", SqlDbType.Int).Value = Id;
+                SqlCon.Open();
+                Rpta = Comando.ExecuteNonQuery() == 1 ? "OK" : "No se puedo actualizar";
+            }
+            catch (Exception ex)
+            {
+                Rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return Rpta;
+        }
+
+
+        public string ActualizarEjemplares(int Id)
+        {
+            string Rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("ejemplares_devolver", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@id_libro", SqlDbType.Int).Value = Id;
                 SqlCon.Open();
                 Rpta = Comando.ExecuteNonQuery() == 1 ? "OK" : "No se puedo actualizar";
             }

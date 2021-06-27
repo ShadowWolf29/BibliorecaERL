@@ -35,5 +35,17 @@ namespace ProyectoBiblitecaERL.Vistas
             frm.Show();
             this.Close();
         }
+
+        private void BtnLibros_Click(object sender, EventArgs e)
+        {
+            BibliotecaERL.Presentacion.Reportes.ReporteLibros ReporteL = new BibliotecaERL.Presentacion.Reportes.ReporteLibros();
+            ReporteL.ShowDialog();
+        }
+
+        private void BtnPrestamos_Click(object sender, EventArgs e)
+        {
+            BibliotecaERL.Presentacion.Reportes.ReportePrestamos ReporteP = new BibliotecaERL.Presentacion.Reportes.ReportePrestamos();
+            ReporteP.ShowDialog();
+        }
     }
 }

@@ -36,9 +36,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.ImgUser = new System.Windows.Forms.PictureBox();
             this.LblBibliotecaName = new System.Windows.Forms.Label();
             this.BtnLibros = new System.Windows.Forms.Button();
-            this.BtnVideos = new System.Windows.Forms.Button();
             this.BtnPrestamos = new System.Windows.Forms.Button();
-            this.BtnProfesores = new System.Windows.Forms.Button();
             this.BtnDevoluciones = new System.Windows.Forms.Button();
             this.BtnReportes = new System.Windows.Forms.Button();
             this.BtnCerrar = new System.Windows.Forms.Button();
@@ -118,18 +116,6 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BtnLibros.UseVisualStyleBackColor = false;
             this.BtnLibros.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BtnVideos
-            // 
-            this.BtnVideos.BackColor = System.Drawing.Color.Teal;
-            this.BtnVideos.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.BtnVideos.ForeColor = System.Drawing.Color.White;
-            this.BtnVideos.Location = new System.Drawing.Point(136, 215);
-            this.BtnVideos.Name = "BtnVideos";
-            this.BtnVideos.Size = new System.Drawing.Size(149, 66);
-            this.BtnVideos.TabIndex = 5;
-            this.BtnVideos.Text = "VIDEOS";
-            this.BtnVideos.UseVisualStyleBackColor = false;
-            // 
             // BtnPrestamos
             // 
             this.BtnPrestamos.BackColor = System.Drawing.Color.Teal;
@@ -143,25 +129,12 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BtnPrestamos.UseVisualStyleBackColor = false;
             this.BtnPrestamos.Click += new System.EventHandler(this.BtnPrestamos_Click);
             // 
-            // BtnProfesores
-            // 
-            this.BtnProfesores.BackColor = System.Drawing.Color.Teal;
-            this.BtnProfesores.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.BtnProfesores.ForeColor = System.Drawing.Color.White;
-            this.BtnProfesores.Location = new System.Drawing.Point(136, 316);
-            this.BtnProfesores.Name = "BtnProfesores";
-            this.BtnProfesores.Size = new System.Drawing.Size(149, 66);
-            this.BtnProfesores.TabIndex = 9;
-            this.BtnProfesores.Text = "PROFESORES";
-            this.BtnProfesores.UseVisualStyleBackColor = false;
-            this.BtnProfesores.Click += new System.EventHandler(this.BtnProfesores_Click);
-            // 
             // BtnDevoluciones
             // 
             this.BtnDevoluciones.BackColor = System.Drawing.Color.Teal;
             this.BtnDevoluciones.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnDevoluciones.ForeColor = System.Drawing.Color.White;
-            this.BtnDevoluciones.Location = new System.Drawing.Point(425, 215);
+            this.BtnDevoluciones.Location = new System.Drawing.Point(136, 240);
             this.BtnDevoluciones.Name = "BtnDevoluciones";
             this.BtnDevoluciones.Size = new System.Drawing.Size(149, 66);
             this.BtnDevoluciones.TabIndex = 8;
@@ -174,7 +147,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BtnReportes.BackColor = System.Drawing.Color.Teal;
             this.BtnReportes.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnReportes.ForeColor = System.Drawing.Color.White;
-            this.BtnReportes.Location = new System.Drawing.Point(425, 316);
+            this.BtnReportes.Location = new System.Drawing.Point(425, 240);
             this.BtnReportes.Name = "BtnReportes";
             this.BtnReportes.Size = new System.Drawing.Size(149, 66);
             this.BtnReportes.TabIndex = 7;
@@ -202,11 +175,9 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(691, 443);
             this.Controls.Add(this.BtnCerrar);
-            this.Controls.Add(this.BtnProfesores);
             this.Controls.Add(this.BtnDevoluciones);
             this.Controls.Add(this.BtnReportes);
             this.Controls.Add(this.BtnPrestamos);
-            this.Controls.Add(this.BtnVideos);
             this.Controls.Add(this.BtnLibros);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblInicio);
@@ -229,9 +200,7 @@ namespace ProyectoBiblitecaERL.Vistas
         private System.Windows.Forms.PictureBox ImgUser;
         private System.Windows.Forms.Label LblBibliotecaName;
         private System.Windows.Forms.Button BtnLibros;
-        private System.Windows.Forms.Button BtnVideos;
         private System.Windows.Forms.Button BtnPrestamos;
-        private System.Windows.Forms.Button BtnProfesores;
         private System.Windows.Forms.Button BtnDevoluciones;
         private System.Windows.Forms.Button BtnReportes;
         private System.Windows.Forms.Button BtnCerrar;

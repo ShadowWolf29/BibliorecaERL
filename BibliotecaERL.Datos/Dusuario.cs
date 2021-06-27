@@ -37,5 +37,61 @@ namespace BibliotecaERL.Datos
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
         }
+
+
+        public DataTable Listar()
+        {
+            SqlDataReader Resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("empleados_listar", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                SqlCon.Open();
+                Resultado = Comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                return Tabla;
+            }
+            catch (Exception ex)
+            {
+                return null;
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
+
+        public DataTable Buscar(string Valor)
+        {
+            SqlDataReader Resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("empleados_buscar", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@valor", SqlDbType.VarChar).Value = Valor;
+                SqlCon.Open();
+                Resultado = Comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                return Tabla;
+            }
+            catch (Exception ex)
+            {
+                return null;
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
+
+
     }
 }

@@ -23,6 +23,19 @@ namespace BibliotecaERL.Negocio
             return Datos.Buscar(Valor);
         }
 
+        public static DataTable Listar_disponible()
+        {
+            DLibro Datos = new DLibro();
+            return Datos.Listar_disponible();
+        }
+
+        public static DataTable Buscar_disponible(string Valor)
+        {
+            DLibro Datos = new DLibro();
+            return Datos.Buscar_disponible(Valor);
+        }
+
+
         public static string Insertar(int num_ejemplares, string isbn, string titulo, string autores, int anio_edicion,
          int num_edicion, string pais, string idioma,string materia, int num_paginas, string ubicacion, string descripcion,string editorial )
         {
@@ -64,6 +77,20 @@ namespace BibliotecaERL.Negocio
             Obj.descripcion = descripcion;
             Obj.editorial = editorial;
             return Datos.Actualizar(Obj);
+        }
+
+        public static string ActualizarCantidad(int id_libro)
+        {
+            DLibro Datos = new DLibro();
+            Libro Obj = new Libro();
+            return Datos.ActualizarCantidad(id_libro);
+        }
+
+        public static string ActualizarEjemplares(int id_libro)
+        {
+            DLibro Datos = new DLibro();
+            Libro Obj = new Libro();
+            return Datos.ActualizarEjemplares(id_libro);
         }
 
         public static string Eliminar(int id_libro)

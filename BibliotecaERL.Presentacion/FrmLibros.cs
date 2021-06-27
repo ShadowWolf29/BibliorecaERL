@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ProyectoBiblitecaERL.FrmLogin;
 
 namespace ProyectoBiblitecaERL.Vistas
 {
@@ -34,11 +35,39 @@ namespace ProyectoBiblitecaERL.Vistas
             }
         }
 
+        private void Listar_disponible()
+        {
+            toolTip1.SetToolTip(TxtCodigo, "El codigo se asignara automaticamente");
+            toolTip2.SetToolTip(DgvListado, "Doble clic para modificar o eliminar");
+            try
+            {
+                DgvListado.DataSource = NLibro.Listar_disponible();
+                DgvListado.Columns[0].Visible = false;
+                this.Limpiar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
         private void Buscar()
         {
             try
             {
                 DgvListado.DataSource = NLibro.Buscar(TxtBuscar.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Buscar_disponible()
+        {
+            try
+            {
+                DgvListado.DataSource = NLibro.Buscar_disponible(TxtBuscar.Text);
             }
             catch (Exception ex)
             {
@@ -71,6 +100,31 @@ namespace ProyectoBiblitecaERL.Vistas
             Chkseleccionar.Checked = false;
         }
 
+        private void Limpiar_disponible()
+        {
+            TxtBuscar.Clear();
+            TxtAno.Clear();
+            TxtAutores.Clear();
+            TxtCantidad.Clear();
+            TxtCodigo.Clear();
+            TxtDescripcion.Clear();
+            TxtEdicion.Clear();
+            TxtEditorial.Clear();
+            TxtIdioma.Clear();
+            TxtISBM.Clear();
+            TxtMateria.Clear();
+            TxtPaginas.Clear();
+            TxtPais.Clear();
+            TxtTiutlos.Clear();
+            TxtUbicacion.Clear();
+            ErrorIcono.Clear();
+            btnInsertar.Visible = false;
+            BtnActualizar.Visible = false;
+            DgvListado.Columns[0].Visible = false;
+            BtnEliminar.Visible = false;
+            Chkseleccionar.Checked = false;
+        }
+
         private void MensajeError(string Mensaje)
         {
             MessageBox.Show(Mensaje, "Biblioteca", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -88,7 +142,19 @@ namespace ProyectoBiblitecaERL.Vistas
 
         private void FrmLibros_Load(object sender, EventArgs e)
         {
-            this.Listar();
+            Chkseleccionar.Visible = false;
+            btnCancelar.Visible = false;
+            btnInsertar.Visible = false;
+            if (Global.rol == "empleado")
+            {
+                btnInsertar.Visible = false;
+                this.Listar_disponible();
+            }
+            else
+            {
+                this.Listar();
+            }
+                
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -142,11 +208,22 @@ namespace ProyectoBiblitecaERL.Vistas
 
         private void TxtBuscar_KeyUp(object sender, KeyEventArgs e)
         {
-            if (TxtBuscar.Text == "")
+            if(Global.rol == "empleado")
             {
-                this.Listar();
+                if (TxtBuscar.Text == "")
+                {
+                    this.Listar_disponible();
+                }
+                else { this.Buscar_disponible(); }
             }
-            else { this.Buscar(); }
+            else {
+                if (TxtBuscar.Text == "")
+                {
+                    this.Listar();
+                }
+                else { this.Buscar(); }
+            }
+            
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
@@ -177,9 +254,6 @@ namespace ProyectoBiblitecaERL.Vistas
                         this.MensajeError(Rpta);
                     }
                 }
-
-
-
             }
             catch(Exception ex)
             {
@@ -195,8 +269,16 @@ namespace ProyectoBiblitecaERL.Vistas
         private void DgvListado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             this.Limpiar();
-            BtnActualizar.Visible = true;
-            btnInsertar.Visible = false;
+            if (Global.rol == "empleado")
+            {
+                BtnActualizar.Visible = false;
+                btnInsertar.Visible = false;
+            }
+            else
+            {
+                BtnActualizar.Visible = true;
+                btnInsertar.Visible = false;
+            }
             TxtCodigo.Text = Convert.ToString(DgvListado.CurrentRow.Cells["id"].Value);
             TxtISBM.Text = Convert.ToString(DgvListado.CurrentRow.Cells["isbn"].Value);
             TxtTiutlos.Text = Convert.ToString(DgvListado.CurrentRow.Cells["titulo"].Value);

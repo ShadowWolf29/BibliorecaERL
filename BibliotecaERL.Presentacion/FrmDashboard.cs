@@ -41,6 +41,12 @@ namespace ProyectoBiblitecaERL.Vistas
         private void Form2_Load(object sender, EventArgs e)
         {
             LblUserName.Text = Global.nombre;
+            if(Global.rol == "empleado")
+            {
+                BtnDevoluciones.Visible = false;
+                BtnPrestamos.Visible = false;
+                BtnReportes.Visible = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
