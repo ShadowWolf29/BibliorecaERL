@@ -9,3 +9,14 @@ C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Negocio\bin\
 C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Negocio\bin\Debug\BibliotecaERL.Datos.pdb
 C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Negocio\bin\Debug\BibliotecaERL.Entidades.pdb
 C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Negocio\obj\Debug\BibliotecaERL.Negocio.csproj.CopyComplete
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\bin\Debug\BibliotecaERL.Negocio.dll
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\bin\Debug\BibliotecaERL.Negocio.pdb
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\bin\Debug\BibliotecaERL.Datos.dll
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\bin\Debug\BibliotecaERL.Entidades.dll
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\bin\Debug\BibliotecaERL.Datos.pdb
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\bin\Debug\BibliotecaERL.Entidades.pdb
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\obj\Debug\BibliotecaERL.Negocio.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\obj\Debug\BibliotecaERL.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\obj\Debug\BibliotecaERL.Negocio.csproj.CopyComplete
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\obj\Debug\BibliotecaERL.Negocio.dll
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Negocio\obj\Debug\BibliotecaERL.Negocio.pdb

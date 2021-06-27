@@ -37,3 +37,10 @@ C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion
 C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Datos.pdb
 C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Entidades.pdb
 C:\Users\kensh\Desktop\Proyecto N Capas\BibliorecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.CopyComplete
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Negocio.dll
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Datos.dll
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Entidades.dll
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Negocio.pdb
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Datos.pdb
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\bin\Debug\BibliotecaERL.Entidades.pdb
+C:\Users\USER\source\repos\BibliotecaERL\BibliotecaERL.Presentacion\obj\Debug\BibliotecaERL.Presentacion.csproj.CopyComplete

@@ -31,14 +31,17 @@ namespace ProyectoBiblitecaERL.Vistas
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLibros));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ImgUser = new System.Windows.Forms.PictureBox();
             this.LblBibliotecaName = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
             this.LblInicio = new System.Windows.Forms.Label();
             this.GrbDatos = new System.Windows.Forms.GroupBox();
+            this.Chkseleccionar = new System.Windows.Forms.CheckBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnInsertar = new System.Windows.Forms.Button();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
@@ -85,11 +88,8 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BtnRegresar = new System.Windows.Forms.Button();
             this.LbllInicio = new System.Windows.Forms.LinkLabel();
             this.ErrorIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnInsertar = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.Chkseleccionar = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).BeginInit();
             this.GrbDatos.SuspendLayout();
@@ -197,6 +197,46 @@ namespace ProyectoBiblitecaERL.Vistas
             this.GrbDatos.TabStop = false;
             this.GrbDatos.Text = "Datos del libro";
             // 
+            // Chkseleccionar
+            // 
+            this.Chkseleccionar.BackColor = System.Drawing.Color.White;
+            this.Chkseleccionar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Chkseleccionar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chkseleccionar.ForeColor = System.Drawing.Color.Black;
+            this.Chkseleccionar.Location = new System.Drawing.Point(114, 610);
+            this.Chkseleccionar.Name = "Chkseleccionar";
+            this.Chkseleccionar.Size = new System.Drawing.Size(97, 23);
+            this.Chkseleccionar.TabIndex = 43;
+            this.Chkseleccionar.Text = "Seleccionar";
+            this.Chkseleccionar.UseVisualStyleBackColor = false;
+            this.Chkseleccionar.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Location = new System.Drawing.Point(217, 601);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(101, 35);
+            this.btnCancelar.TabIndex = 42;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnInsertar
+            // 
+            this.btnInsertar.BackColor = System.Drawing.Color.Teal;
+            this.btnInsertar.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.btnInsertar.ForeColor = System.Drawing.Color.White;
+            this.btnInsertar.Location = new System.Drawing.Point(328, 600);
+            this.btnInsertar.Name = "btnInsertar";
+            this.btnInsertar.Size = new System.Drawing.Size(119, 35);
+            this.btnInsertar.TabIndex = 41;
+            this.btnInsertar.Text = "Insertar";
+            this.btnInsertar.UseVisualStyleBackColor = false;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
+            // 
             // BtnActualizar
             // 
             this.BtnActualizar.BackColor = System.Drawing.Color.Teal;
@@ -228,10 +268,10 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtDescripcion
             // 
             this.TxtDescripcion.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.TxtDescripcion.Location = new System.Drawing.Point(120, 485);
+            this.TxtDescripcion.Location = new System.Drawing.Point(130, 485);
             this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(328, 110);
+            this.TxtDescripcion.Size = new System.Drawing.Size(318, 110);
             this.TxtDescripcion.TabIndex = 39;
             // 
             // LblDescripcion
@@ -239,7 +279,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.LblDescripcion.AutoSize = true;
             this.LblDescripcion.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.LblDescripcion.ForeColor = System.Drawing.Color.White;
-            this.LblDescripcion.Location = new System.Drawing.Point(15, 485);
+            this.LblDescripcion.Location = new System.Drawing.Point(16, 485);
             this.LblDescripcion.Name = "LblDescripcion";
             this.LblDescripcion.Size = new System.Drawing.Size(115, 25);
             this.LblDescripcion.TabIndex = 38;
@@ -258,7 +298,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.LblPaginas.AutoSize = true;
             this.LblPaginas.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.LblPaginas.ForeColor = System.Drawing.Color.White;
-            this.LblPaginas.Location = new System.Drawing.Point(247, 442);
+            this.LblPaginas.Location = new System.Drawing.Point(241, 442);
             this.LblPaginas.Name = "LblPaginas";
             this.LblPaginas.Size = new System.Drawing.Size(89, 30);
             this.LblPaginas.TabIndex = 36;
@@ -267,9 +307,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtEdicion
             // 
             this.TxtEdicion.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtEdicion.Location = new System.Drawing.Point(105, 442);
+            this.TxtEdicion.Location = new System.Drawing.Point(120, 442);
             this.TxtEdicion.Name = "TxtEdicion";
-            this.TxtEdicion.Size = new System.Drawing.Size(130, 33);
+            this.TxtEdicion.Size = new System.Drawing.Size(115, 33);
             this.TxtEdicion.TabIndex = 35;
             // 
             // LblEdicion
@@ -286,9 +326,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtUbicacion
             // 
             this.TxtUbicacion.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtUbicacion.Location = new System.Drawing.Point(105, 399);
+            this.TxtUbicacion.Location = new System.Drawing.Point(120, 399);
             this.TxtUbicacion.Name = "TxtUbicacion";
-            this.TxtUbicacion.Size = new System.Drawing.Size(343, 33);
+            this.TxtUbicacion.Size = new System.Drawing.Size(328, 33);
             this.TxtUbicacion.TabIndex = 33;
             // 
             // LblUbicacion
@@ -324,9 +364,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtCantidad
             // 
             this.TxtCantidad.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtCantidad.Location = new System.Drawing.Point(105, 182);
+            this.TxtCantidad.Location = new System.Drawing.Point(120, 182);
             this.TxtCantidad.Name = "TxtCantidad";
-            this.TxtCantidad.Size = new System.Drawing.Size(130, 33);
+            this.TxtCantidad.Size = new System.Drawing.Size(121, 33);
             this.TxtCantidad.TabIndex = 29;
             // 
             // LblCantidad
@@ -364,9 +404,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtIdioma
             // 
             this.TxtIdioma.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtIdioma.Location = new System.Drawing.Point(105, 312);
+            this.TxtIdioma.Location = new System.Drawing.Point(120, 312);
             this.TxtIdioma.Name = "TxtIdioma";
-            this.TxtIdioma.Size = new System.Drawing.Size(343, 33);
+            this.TxtIdioma.Size = new System.Drawing.Size(328, 33);
             this.TxtIdioma.TabIndex = 25;
             // 
             // LblIdioma
@@ -383,9 +423,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtMateria
             // 
             this.TxtMateria.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtMateria.Location = new System.Drawing.Point(105, 355);
+            this.TxtMateria.Location = new System.Drawing.Point(120, 355);
             this.TxtMateria.Name = "TxtMateria";
-            this.TxtMateria.Size = new System.Drawing.Size(343, 33);
+            this.TxtMateria.Size = new System.Drawing.Size(328, 33);
             this.TxtMateria.TabIndex = 23;
             // 
             // LblMateria
@@ -402,9 +442,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtEditorial
             // 
             this.TxtEditorial.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtEditorial.Location = new System.Drawing.Point(105, 225);
+            this.TxtEditorial.Location = new System.Drawing.Point(120, 225);
             this.TxtEditorial.Name = "TxtEditorial";
-            this.TxtEditorial.Size = new System.Drawing.Size(343, 33);
+            this.TxtEditorial.Size = new System.Drawing.Size(328, 33);
             this.TxtEditorial.TabIndex = 21;
             // 
             // LblEditorial
@@ -421,9 +461,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtPais
             // 
             this.TxtPais.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtPais.Location = new System.Drawing.Point(105, 269);
+            this.TxtPais.Location = new System.Drawing.Point(120, 269);
             this.TxtPais.Name = "TxtPais";
-            this.TxtPais.Size = new System.Drawing.Size(343, 33);
+            this.TxtPais.Size = new System.Drawing.Size(328, 33);
             this.TxtPais.TabIndex = 19;
             // 
             // LblPais
@@ -440,9 +480,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtAutores
             // 
             this.TxtAutores.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtAutores.Location = new System.Drawing.Point(105, 139);
+            this.TxtAutores.Location = new System.Drawing.Point(120, 139);
             this.TxtAutores.Name = "TxtAutores";
-            this.TxtAutores.Size = new System.Drawing.Size(343, 33);
+            this.TxtAutores.Size = new System.Drawing.Size(328, 33);
             this.TxtAutores.TabIndex = 17;
             // 
             // LblAutores
@@ -459,10 +499,10 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtCodigo
             // 
             this.TxtCodigo.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtCodigo.Location = new System.Drawing.Point(105, 52);
+            this.TxtCodigo.Location = new System.Drawing.Point(120, 52);
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.ReadOnly = true;
-            this.TxtCodigo.Size = new System.Drawing.Size(130, 33);
+            this.TxtCodigo.Size = new System.Drawing.Size(121, 33);
             this.TxtCodigo.TabIndex = 13;
             // 
             // LblCodigo
@@ -480,9 +520,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // TxtTiutlos
             // 
             this.TxtTiutlos.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtTiutlos.Location = new System.Drawing.Point(105, 95);
+            this.TxtTiutlos.Location = new System.Drawing.Point(120, 95);
             this.TxtTiutlos.Name = "TxtTiutlos";
-            this.TxtTiutlos.Size = new System.Drawing.Size(343, 33);
+            this.TxtTiutlos.Size = new System.Drawing.Size(328, 33);
             this.TxtTiutlos.TabIndex = 11;
             // 
             // LblTitulo
@@ -505,22 +545,22 @@ namespace ProyectoBiblitecaERL.Vistas
             this.DgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccionar});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvListado.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvListado.DefaultCellStyle = dataGridViewCellStyle1;
             this.DgvListado.Location = new System.Drawing.Point(487, 194);
             this.DgvListado.Name = "DgvListado";
             this.DgvListado.ReadOnly = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DgvListado.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.DgvListado.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DgvListado.RowTemplate.Height = 25;
             this.DgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvListado.Size = new System.Drawing.Size(432, 547);
@@ -675,46 +715,6 @@ namespace ProyectoBiblitecaERL.Vistas
             // ErrorIcono
             // 
             this.ErrorIcono.ContainerControl = this;
-            // 
-            // btnInsertar
-            // 
-            this.btnInsertar.BackColor = System.Drawing.Color.Teal;
-            this.btnInsertar.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.btnInsertar.ForeColor = System.Drawing.Color.White;
-            this.btnInsertar.Location = new System.Drawing.Point(328, 600);
-            this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(119, 35);
-            this.btnInsertar.TabIndex = 41;
-            this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = false;
-            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(217, 601);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(101, 35);
-            this.btnCancelar.TabIndex = 42;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // Chkseleccionar
-            // 
-            this.Chkseleccionar.BackColor = System.Drawing.Color.White;
-            this.Chkseleccionar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Chkseleccionar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Chkseleccionar.ForeColor = System.Drawing.Color.Black;
-            this.Chkseleccionar.Location = new System.Drawing.Point(114, 610);
-            this.Chkseleccionar.Name = "Chkseleccionar";
-            this.Chkseleccionar.Size = new System.Drawing.Size(97, 23);
-            this.Chkseleccionar.TabIndex = 43;
-            this.Chkseleccionar.Text = "Seleccionar";
-            this.Chkseleccionar.UseVisualStyleBackColor = false;
-            this.Chkseleccionar.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // FrmLibros
             // 

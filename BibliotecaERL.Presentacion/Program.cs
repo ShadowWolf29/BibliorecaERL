@@ -17,7 +17,7 @@ namespace BibliotecaERL.Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            //Application.Run(new FrmLogin());
 
             FrmLogin main = new FrmLogin();
             main.FormClosed += MainForm_Closed;

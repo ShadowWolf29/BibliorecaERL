@@ -48,11 +48,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // BtnPrestamos
             // 
             this.BtnPrestamos.BackColor = System.Drawing.Color.Teal;
-            this.BtnPrestamos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnPrestamos.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnPrestamos.ForeColor = System.Drawing.Color.White;
-            this.BtnPrestamos.Location = new System.Drawing.Point(475, 217);
+            this.BtnPrestamos.Location = new System.Drawing.Point(412, 188);
             this.BtnPrestamos.Name = "BtnPrestamos";
-            this.BtnPrestamos.Size = new System.Drawing.Size(174, 76);
+            this.BtnPrestamos.Size = new System.Drawing.Size(149, 66);
             this.BtnPrestamos.TabIndex = 14;
             this.BtnPrestamos.Text = "PRESTAMOS";
             this.BtnPrestamos.UseVisualStyleBackColor = false;
@@ -60,11 +60,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // BtnLibros
             // 
             this.BtnLibros.BackColor = System.Drawing.Color.Teal;
-            this.BtnLibros.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnLibros.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.BtnLibros.ForeColor = System.Drawing.Color.White;
-            this.BtnLibros.Location = new System.Drawing.Point(152, 217);
+            this.BtnLibros.Location = new System.Drawing.Point(118, 188);
             this.BtnLibros.Name = "BtnLibros";
-            this.BtnLibros.Size = new System.Drawing.Size(174, 76);
+            this.BtnLibros.Size = new System.Drawing.Size(149, 66);
             this.BtnLibros.TabIndex = 12;
             this.BtnLibros.Text = "LIBROS";
             this.BtnLibros.UseVisualStyleBackColor = false;
@@ -75,18 +75,18 @@ namespace ProyectoBiblitecaERL.Vistas
             this.panel1.Controls.Add(this.ImgUser);
             this.panel1.Controls.Add(this.LblBibliotecaName);
             this.panel1.Controls.Add(this.LblUserName);
-            this.panel1.Location = new System.Drawing.Point(-5, 0);
+            this.panel1.Location = new System.Drawing.Point(-4, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(810, 54);
+            this.panel1.Size = new System.Drawing.Size(694, 47);
             this.panel1.TabIndex = 11;
             // 
             // ImgUser
             // 
             this.ImgUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ImgUser.Image = ((System.Drawing.Image)(resources.GetObject("ImgUser.Image")));
-            this.ImgUser.Location = new System.Drawing.Point(746, 0);
+            this.ImgUser.Location = new System.Drawing.Point(639, 0);
             this.ImgUser.Name = "ImgUser";
-            this.ImgUser.Size = new System.Drawing.Size(50, 50);
+            this.ImgUser.Size = new System.Drawing.Size(43, 43);
             this.ImgUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgUser.TabIndex = 4;
             this.ImgUser.TabStop = false;
@@ -95,9 +95,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // 
             this.LblBibliotecaName.AutoSize = true;
             this.LblBibliotecaName.BackColor = System.Drawing.Color.Teal;
-            this.LblBibliotecaName.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblBibliotecaName.Font = new System.Drawing.Font("Segoe UI", 21.75F);
             this.LblBibliotecaName.ForeColor = System.Drawing.Color.White;
-            this.LblBibliotecaName.Location = new System.Drawing.Point(11, 6);
+            this.LblBibliotecaName.Location = new System.Drawing.Point(9, 5);
             this.LblBibliotecaName.Name = "LblBibliotecaName";
             this.LblBibliotecaName.Size = new System.Drawing.Size(192, 40);
             this.LblBibliotecaName.TabIndex = 3;
@@ -106,22 +106,22 @@ namespace ProyectoBiblitecaERL.Vistas
             // LblUserName
             // 
             this.LblUserName.AutoSize = true;
-            this.LblUserName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblUserName.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.LblUserName.ForeColor = System.Drawing.Color.White;
-            this.LblUserName.Location = new System.Drawing.Point(538, 10);
+            this.LblUserName.Location = new System.Drawing.Point(461, 9);
             this.LblUserName.Name = "LblUserName";
-            this.LblUserName.Size = new System.Drawing.Size(202, 32);
+            this.LblUserName.Size = new System.Drawing.Size(203, 32);
             this.LblUserName.TabIndex = 2;
             this.LblUserName.Text = "Carlos Quintanilla";
             // 
             // LblInicio
             // 
             this.LblInicio.AutoSize = true;
-            this.LblInicio.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblInicio.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.LblInicio.ForeColor = System.Drawing.Color.White;
-            this.LblInicio.Location = new System.Drawing.Point(126, 62);
+            this.LblInicio.Location = new System.Drawing.Point(108, 54);
             this.LblInicio.Name = "LblInicio";
-            this.LblInicio.Size = new System.Drawing.Size(146, 32);
+            this.LblInicio.Size = new System.Drawing.Size(147, 32);
             this.LblInicio.TabIndex = 10;
             this.LblInicio.Text = "> Prestamos";
             // 
@@ -131,9 +131,9 @@ namespace ProyectoBiblitecaERL.Vistas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(117, 148);
+            this.label1.Location = new System.Drawing.Point(77, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 30);
             this.label1.TabIndex = 15;
@@ -146,9 +146,9 @@ namespace ProyectoBiblitecaERL.Vistas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(429, 148);
+            this.label2.Location = new System.Drawing.Point(352, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(272, 30);
             this.label2.TabIndex = 16;
@@ -158,11 +158,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // 
             this.LbllInicio.ActiveLinkColor = System.Drawing.Color.Silver;
             this.LbllInicio.AutoSize = true;
-            this.LbllInicio.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LbllInicio.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.LbllInicio.LinkColor = System.Drawing.Color.White;
-            this.LbllInicio.Location = new System.Drawing.Point(59, 62);
+            this.LbllInicio.Location = new System.Drawing.Point(51, 54);
             this.LbllInicio.Name = "LbllInicio";
-            this.LbllInicio.Size = new System.Drawing.Size(71, 32);
+            this.LbllInicio.Size = new System.Drawing.Size(72, 32);
             this.LbllInicio.TabIndex = 46;
             this.LbllInicio.TabStop = true;
             this.LbllInicio.Text = "Inicio";
@@ -172,11 +172,11 @@ namespace ProyectoBiblitecaERL.Vistas
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(59, 408);
+            this.button2.Location = new System.Drawing.Point(51, 351);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 30);
+            this.button2.Size = new System.Drawing.Size(91, 29);
             this.button2.TabIndex = 80;
             this.button2.Text = "Regresar";
             this.button2.UseVisualStyleBackColor = false;
@@ -184,10 +184,10 @@ namespace ProyectoBiblitecaERL.Vistas
             // 
             // FrmReportes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(686, 390);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.LbllInicio);
             this.Controls.Add(this.label2);

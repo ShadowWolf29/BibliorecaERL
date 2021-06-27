@@ -85,7 +85,7 @@ namespace ProyectoBiblitecaERL.Vistas
             // 
             this.ImgUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ImgUser.Image = ((System.Drawing.Image)(resources.GetObject("ImgUser.Image")));
-            this.ImgUser.Location = new System.Drawing.Point(648, 3);
+            this.ImgUser.Location = new System.Drawing.Point(618, 3);
             this.ImgUser.Name = "ImgUser";
             this.ImgUser.Size = new System.Drawing.Size(43, 43);
             this.ImgUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -184,11 +184,13 @@ namespace ProyectoBiblitecaERL.Vistas
             // 
             // BtnCerrar
             // 
-            this.BtnCerrar.Location = new System.Drawing.Point(588, 408);
+            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnCerrar.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.BtnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCerrar.Image")));
+            this.BtnCerrar.Location = new System.Drawing.Point(630, 49);
             this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(80, 23);
+            this.BtnCerrar.Size = new System.Drawing.Size(49, 47);
             this.BtnCerrar.TabIndex = 10;
-            this.BtnCerrar.Text = "Cerrar sesion";
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
@@ -197,6 +199,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(691, 443);
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.BtnProfesores);

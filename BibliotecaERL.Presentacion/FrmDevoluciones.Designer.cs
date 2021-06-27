@@ -146,9 +146,9 @@ namespace ProyectoBiblitecaERL.Vistas
             this.button1.BackColor = System.Drawing.Color.Teal;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(649, 489);
+            this.button1.Location = new System.Drawing.Point(628, 489);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 49);
+            this.button1.Size = new System.Drawing.Size(135, 49);
             this.button1.TabIndex = 78;
             this.button1.Text = "Devolver";
             this.button1.UseVisualStyleBackColor = false;
@@ -172,7 +172,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.groupBox3.Size = new System.Drawing.Size(251, 374);
             this.groupBox3.TabIndex = 69;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Datos del Prestamo";
+            this.groupBox3.Text = "Prestamo";
             // 
             // label2
             // 
@@ -247,7 +247,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.LblTiempoTotal.AutoSize = true;
             this.LblTiempoTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.LblTiempoTotal.ForeColor = System.Drawing.Color.White;
-            this.LblTiempoTotal.Location = new System.Drawing.Point(21, 178);
+            this.LblTiempoTotal.Location = new System.Drawing.Point(21, 182);
             this.LblTiempoTotal.Name = "LblTiempoTotal";
             this.LblTiempoTotal.Size = new System.Drawing.Size(100, 25);
             this.LblTiempoTotal.TabIndex = 17;
@@ -344,7 +344,8 @@ namespace ProyectoBiblitecaERL.Vistas
             this.groupBox1.Size = new System.Drawing.Size(239, 374);
             this.groupBox1.TabIndex = 68;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos del profesor";
+            this.groupBox1.Text = "Profesor";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // TxtApellido2
             // 
@@ -427,9 +428,9 @@ namespace ProyectoBiblitecaERL.Vistas
             this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(25, 511);
+            this.button2.Location = new System.Drawing.Point(25, 505);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 26);
+            this.button2.Size = new System.Drawing.Size(91, 32);
             this.button2.TabIndex = 79;
             this.button2.Text = "Regresar";
             this.button2.UseVisualStyleBackColor = false;

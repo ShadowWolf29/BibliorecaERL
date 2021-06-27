@@ -40,5 +40,32 @@ namespace ProyectoBiblitecaERL.Vistas
             frm.Show();
             this.Close();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmDashboard frm = new FrmDashboard();
+            frm.Show();
+            this.Close();
+        }
+
+        private void Nuevo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
