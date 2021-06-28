@@ -43,7 +43,6 @@ namespace ProyectoBiblitecaERL.Vistas
             {
                 DgvListado.DataSource = NLibro.Listar_disponible();
                 DgvListado.Columns[0].Visible = false;
-                this.Limpiar();
             }
             catch (Exception ex)
             {
@@ -95,6 +94,7 @@ namespace ProyectoBiblitecaERL.Vistas
             ErrorIcono.Clear();
             btnInsertar.Visible = true;
             BtnActualizar.Visible = false;
+            btnCancelar.Visible = true;
             DgvListado.Columns[0].Visible = false;
             BtnEliminar.Visible = false;
             Chkseleccionar.Checked = false;
@@ -143,7 +143,7 @@ namespace ProyectoBiblitecaERL.Vistas
         private void FrmLibros_Load(object sender, EventArgs e)
         {
             Chkseleccionar.Visible = false;
-            btnCancelar.Visible = false;
+            btnCancelar.Visible = true;
             btnInsertar.Visible = false;
             if (Global.rol == "empleado")
             {

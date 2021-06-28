@@ -433,6 +433,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.Name = "FrmDevoluciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Devoluciones";
+            this.Load += new System.EventHandler(this.FrmDevoluciones_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).EndInit();

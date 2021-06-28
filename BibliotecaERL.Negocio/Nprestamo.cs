@@ -30,6 +30,13 @@ namespace BibliotecaERL.Negocio
             return Datos.Buscar(Valor);
         }
 
+        public static DataTable BuscarPrestamo()
+        {
+
+            DPrestamo Datos = new DPrestamo();
+            return Datos.Listar();
+        }
+
         public static string ActualizarPrestamo(int Id_prestamo)
         {
             DPrestamo Datos = new DPrestamo();

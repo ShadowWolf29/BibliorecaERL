@@ -55,12 +55,23 @@ namespace ProyectoBiblitecaERL
                 }
                 else
                 {
-                    FrmDashboard Frm = new FrmDashboard();
+                    
+                    
                     Global.id_empleado = Convert.ToInt32(Tabla.Rows[0][0]);
                     Global.id_rol = Convert.ToInt32(Tabla.Rows[0][1]); 
                     Global.rol = Convert.ToString(Tabla.Rows[0][2]);
                     Global.nombre = Convert.ToString(Tabla.Rows[0][3]);
-                    Frm.Show();
+                    if(Global.id_rol == 1)
+                    {
+                        FrmLibros Frm = new FrmLibros();
+                        Frm.Show();
+                    }
+                    else
+                    {
+                        FrmDashboard Frm = new FrmDashboard();
+                        Frm.Show();
+                    }
+                    
                     this.Hide();
                 }
             }catch(Exception ex)

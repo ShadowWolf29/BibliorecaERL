@@ -43,6 +43,19 @@ namespace ProyectoBiblitecaERL.Vistas
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+
+        private void ListarActivos()
+        {
+            try
+            {
+                DgvDevolucion.DataSource = Nprestamo.BuscarPrestamo();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
         private void LblLibros_Click(object sender, EventArgs e)
         {
 
@@ -152,6 +165,11 @@ namespace ProyectoBiblitecaERL.Vistas
                     MessageBox.Show(ex.Message + ex.StackTrace);
                 }
             }
+        }
+
+        private void FrmDevoluciones_Load(object sender, EventArgs e)
+        {
+            this.ListarActivos();
         }
     }
 }
