@@ -29,7 +29,6 @@ namespace ProyectoBiblitecaERL.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProfesores));
             this.LbllInicio = new System.Windows.Forms.LinkLabel();
             this.LblLibros = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
@@ -75,6 +74,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -86,17 +86,14 @@ namespace ProyectoBiblitecaERL.Vistas
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.LblNombre2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ImgUser = new System.Windows.Forms.PictureBox();
             this.LblBibliotecaName = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
             this.BtnRegresar = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.GrbDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).BeginInit();
             this.SuspendLayout();
             // 
             // LbllInicio
@@ -592,6 +589,18 @@ namespace ProyectoBiblitecaERL.Vistas
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del profesor";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Teal;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(332, 355);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(116, 35);
+            this.button4.TabIndex = 41;
+            this.button4.Text = "Agregar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Control;
@@ -696,24 +705,12 @@ namespace ProyectoBiblitecaERL.Vistas
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.ImgUser);
             this.panel1.Controls.Add(this.LblBibliotecaName);
             this.panel1.Controls.Add(this.LblUserName);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(933, 47);
             this.panel1.TabIndex = 52;
-            // 
-            // ImgUser
-            // 
-            this.ImgUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImgUser.Image = ((System.Drawing.Image)(resources.GetObject("ImgUser.Image")));
-            this.ImgUser.Location = new System.Drawing.Point(867, 2);
-            this.ImgUser.Name = "ImgUser";
-            this.ImgUser.Size = new System.Drawing.Size(43, 43);
-            this.ImgUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgUser.TabIndex = 4;
-            this.ImgUser.TabStop = false;
             // 
             // LblBibliotecaName
             // 
@@ -732,11 +729,12 @@ namespace ProyectoBiblitecaERL.Vistas
             this.LblUserName.AutoSize = true;
             this.LblUserName.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.LblUserName.ForeColor = System.Drawing.Color.White;
-            this.LblUserName.Location = new System.Drawing.Point(688, 10);
+            this.LblUserName.Location = new System.Drawing.Point(658, 9);
             this.LblUserName.Name = "LblUserName";
             this.LblUserName.Size = new System.Drawing.Size(203, 32);
             this.LblUserName.TabIndex = 2;
             this.LblUserName.Text = "Carlos Quintanilla";
+            this.LblUserName.Click += new System.EventHandler(this.LblUserName_Click);
             // 
             // BtnRegresar
             // 
@@ -750,18 +748,6 @@ namespace ProyectoBiblitecaERL.Vistas
             this.BtnRegresar.Text = "Regresar";
             this.BtnRegresar.UseVisualStyleBackColor = false;
             this.BtnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Teal;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(332, 355);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 35);
-            this.button4.TabIndex = 41;
-            this.button4.Text = "Agregar";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // FrmProfesores
             // 
@@ -789,7 +775,6 @@ namespace ProyectoBiblitecaERL.Vistas
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -849,7 +834,6 @@ namespace ProyectoBiblitecaERL.Vistas
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label LblNombre2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox ImgUser;
         private System.Windows.Forms.Label LblBibliotecaName;
         private System.Windows.Forms.Label LblUserName;
         private System.Windows.Forms.Button BtnRegresar;

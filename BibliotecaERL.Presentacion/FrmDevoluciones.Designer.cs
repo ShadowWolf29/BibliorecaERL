@@ -29,11 +29,9 @@ namespace ProyectoBiblitecaERL.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDevoluciones));
             this.LbllInicio = new System.Windows.Forms.LinkLabel();
             this.LblLibros = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ImgUser = new System.Windows.Forms.PictureBox();
             this.LblBibliotecaName = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,17 +51,16 @@ namespace ProyectoBiblitecaERL.Vistas
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TxtApellido2 = new System.Windows.Forms.TextBox();
-            this.LblApellido2 = new System.Windows.Forms.Label();
-            this.TxtApellido1 = new System.Windows.Forms.TextBox();
-            this.LblApellido = new System.Windows.Forms.Label();
             this.TxtNombre1 = new System.Windows.Forms.TextBox();
             this.LblNombre1 = new System.Windows.Forms.Label();
             this.TxtNombre2 = new System.Windows.Forms.TextBox();
             this.LblNombre2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.LblApellido = new System.Windows.Forms.Label();
+            this.TxtApellido1 = new System.Windows.Forms.TextBox();
+            this.LblApellido2 = new System.Windows.Forms.Label();
+            this.TxtApellido2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -99,24 +96,12 @@ namespace ProyectoBiblitecaERL.Vistas
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.ImgUser);
             this.panel1.Controls.Add(this.LblBibliotecaName);
             this.panel1.Controls.Add(this.LblUserName);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(933, 47);
             this.panel1.TabIndex = 43;
-            // 
-            // ImgUser
-            // 
-            this.ImgUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImgUser.Image = ((System.Drawing.Image)(resources.GetObject("ImgUser.Image")));
-            this.ImgUser.Location = new System.Drawing.Point(719, 2);
-            this.ImgUser.Name = "ImgUser";
-            this.ImgUser.Size = new System.Drawing.Size(43, 43);
-            this.ImgUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgUser.TabIndex = 4;
-            this.ImgUser.TabStop = false;
             // 
             // LblBibliotecaName
             // 
@@ -146,7 +131,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.button1.BackColor = System.Drawing.Color.Teal;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(628, 489);
+            this.button1.Location = new System.Drawing.Point(628, 542);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 49);
             this.button1.TabIndex = 78;
@@ -169,7 +154,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(510, 110);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(251, 374);
+            this.groupBox3.Size = new System.Drawing.Size(251, 426);
             this.groupBox3.TabIndex = 69;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Prestamo";
@@ -302,9 +287,9 @@ namespace ProyectoBiblitecaERL.Vistas
             // txtNombreBuscar
             // 
             this.txtNombreBuscar.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtNombreBuscar.Location = new System.Drawing.Point(269, 153);
+            this.txtNombreBuscar.Location = new System.Drawing.Point(115, 204);
             this.txtNombreBuscar.Name = "txtNombreBuscar";
-            this.txtNombreBuscar.Size = new System.Drawing.Size(236, 33);
+            this.txtNombreBuscar.Size = new System.Drawing.Size(329, 33);
             this.txtNombreBuscar.TabIndex = 72;
             // 
             // label3
@@ -312,7 +297,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(269, 124);
+            this.label3.Location = new System.Drawing.Point(15, 210);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 30);
             this.label3.TabIndex = 71;
@@ -321,10 +306,10 @@ namespace ProyectoBiblitecaERL.Vistas
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(269, 198);
+            this.dataGridView2.Location = new System.Drawing.Point(40, 353);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(236, 285);
+            this.dataGridView2.Size = new System.Drawing.Size(459, 168);
             this.dataGridView2.TabIndex = 70;
             // 
             // groupBox1
@@ -333,7 +318,9 @@ namespace ProyectoBiblitecaERL.Vistas
             this.groupBox1.Controls.Add(this.LblApellido2);
             this.groupBox1.Controls.Add(this.TxtApellido1);
             this.groupBox1.Controls.Add(this.LblApellido);
+            this.groupBox1.Controls.Add(this.txtNombreBuscar);
             this.groupBox1.Controls.Add(this.TxtNombre1);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.LblNombre1);
             this.groupBox1.Controls.Add(this.TxtNombre2);
             this.groupBox1.Controls.Add(this.LblNombre2);
@@ -341,49 +328,11 @@ namespace ProyectoBiblitecaERL.Vistas
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(25, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(239, 374);
+            this.groupBox1.Size = new System.Drawing.Size(480, 426);
             this.groupBox1.TabIndex = 68;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Profesor";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // TxtApellido2
-            // 
-            this.TxtApellido2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtApellido2.Location = new System.Drawing.Point(15, 292);
-            this.TxtApellido2.Name = "TxtApellido2";
-            this.TxtApellido2.Size = new System.Drawing.Size(201, 33);
-            this.TxtApellido2.TabIndex = 21;
-            // 
-            // LblApellido2
-            // 
-            this.LblApellido2.AutoSize = true;
-            this.LblApellido2.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.LblApellido2.ForeColor = System.Drawing.Color.White;
-            this.LblApellido2.Location = new System.Drawing.Point(15, 262);
-            this.LblApellido2.Name = "LblApellido2";
-            this.LblApellido2.Size = new System.Drawing.Size(179, 30);
-            this.LblApellido2.TabIndex = 20;
-            this.LblApellido2.Text = "Segundo apellido:";
-            // 
-            // TxtApellido1
-            // 
-            this.TxtApellido1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.TxtApellido1.Location = new System.Drawing.Point(15, 227);
-            this.TxtApellido1.Name = "TxtApellido1";
-            this.TxtApellido1.Size = new System.Drawing.Size(200, 33);
-            this.TxtApellido1.TabIndex = 17;
-            // 
-            // LblApellido
-            // 
-            this.LblApellido.AutoSize = true;
-            this.LblApellido.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.LblApellido.ForeColor = System.Drawing.Color.White;
-            this.LblApellido.Location = new System.Drawing.Point(15, 197);
-            this.LblApellido.Name = "LblApellido";
-            this.LblApellido.Size = new System.Drawing.Size(157, 30);
-            this.LblApellido.TabIndex = 16;
-            this.LblApellido.Text = "Primer apellido:";
             // 
             // TxtNombre1
             // 
@@ -428,7 +377,7 @@ namespace ProyectoBiblitecaERL.Vistas
             this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(25, 505);
+            this.button2.Location = new System.Drawing.Point(25, 558);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(91, 32);
             this.button2.TabIndex = 79;
@@ -436,18 +385,54 @@ namespace ProyectoBiblitecaERL.Vistas
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // LblApellido
+            // 
+            this.LblApellido.AutoSize = true;
+            this.LblApellido.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.LblApellido.ForeColor = System.Drawing.Color.White;
+            this.LblApellido.Location = new System.Drawing.Point(244, 58);
+            this.LblApellido.Name = "LblApellido";
+            this.LblApellido.Size = new System.Drawing.Size(157, 30);
+            this.LblApellido.TabIndex = 16;
+            this.LblApellido.Text = "Primer apellido:";
+            // 
+            // TxtApellido1
+            // 
+            this.TxtApellido1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.TxtApellido1.Location = new System.Drawing.Point(244, 88);
+            this.TxtApellido1.Name = "TxtApellido1";
+            this.TxtApellido1.Size = new System.Drawing.Size(200, 33);
+            this.TxtApellido1.TabIndex = 17;
+            // 
+            // LblApellido2
+            // 
+            this.LblApellido2.AutoSize = true;
+            this.LblApellido2.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.LblApellido2.ForeColor = System.Drawing.Color.White;
+            this.LblApellido2.Location = new System.Drawing.Point(244, 127);
+            this.LblApellido2.Name = "LblApellido2";
+            this.LblApellido2.Size = new System.Drawing.Size(179, 30);
+            this.LblApellido2.TabIndex = 20;
+            this.LblApellido2.Text = "Segundo apellido:";
+            // 
+            // TxtApellido2
+            // 
+            this.TxtApellido2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.TxtApellido2.Location = new System.Drawing.Point(244, 158);
+            this.TxtApellido2.Name = "TxtApellido2";
+            this.TxtApellido2.Size = new System.Drawing.Size(201, 33);
+            this.TxtApellido2.TabIndex = 21;
+            // 
             // FrmDevoluciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.ClientSize = new System.Drawing.Size(814, 554);
+            this.ClientSize = new System.Drawing.Size(814, 604);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.BtnRegresar);
-            this.Controls.Add(this.txtNombreBuscar);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.LbllInicio);
@@ -458,7 +443,6 @@ namespace ProyectoBiblitecaERL.Vistas
             this.Text = "Devoluciones";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -474,7 +458,6 @@ namespace ProyectoBiblitecaERL.Vistas
         private System.Windows.Forms.LinkLabel LbllInicio;
         private System.Windows.Forms.Label LblLibros;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox ImgUser;
         private System.Windows.Forms.Label LblBibliotecaName;
         private System.Windows.Forms.Label LblUserName;
         private System.Windows.Forms.Button button1;
@@ -490,10 +473,6 @@ namespace ProyectoBiblitecaERL.Vistas
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TxtApellido2;
-        private System.Windows.Forms.Label LblApellido2;
-        private System.Windows.Forms.TextBox TxtApellido1;
-        private System.Windows.Forms.Label LblApellido;
         private System.Windows.Forms.TextBox TxtNombre1;
         private System.Windows.Forms.Label LblNombre1;
         private System.Windows.Forms.TextBox TxtNombre2;
@@ -503,5 +482,9 @@ namespace ProyectoBiblitecaERL.Vistas
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TxtApellido2;
+        private System.Windows.Forms.Label LblApellido2;
+        private System.Windows.Forms.TextBox TxtApellido1;
+        private System.Windows.Forms.Label LblApellido;
     }
 }

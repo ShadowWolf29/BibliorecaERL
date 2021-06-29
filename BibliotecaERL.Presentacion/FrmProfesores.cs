@@ -40,5 +40,10 @@ namespace ProyectoBiblitecaERL.Vistas
         {
 
         }
+
+        private void LblUserName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

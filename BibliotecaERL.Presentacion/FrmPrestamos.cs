@@ -67,5 +67,10 @@ namespace ProyectoBiblitecaERL.Vistas
         {
 
         }
+
+        private void txtNombreBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

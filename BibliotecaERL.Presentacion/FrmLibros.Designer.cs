@@ -30,11 +30,9 @@ namespace ProyectoBiblitecaERL.Vistas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLibros));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ImgUser = new System.Windows.Forms.PictureBox();
             this.LblBibliotecaName = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
             this.LblInicio = new System.Windows.Forms.Label();
@@ -91,7 +89,6 @@ namespace ProyectoBiblitecaERL.Vistas
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).BeginInit();
             this.GrbDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorIcono)).BeginInit();
@@ -100,24 +97,12 @@ namespace ProyectoBiblitecaERL.Vistas
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.ImgUser);
             this.panel1.Controls.Add(this.LblBibliotecaName);
             this.panel1.Controls.Add(this.LblUserName);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(933, 47);
             this.panel1.TabIndex = 5;
-            // 
-            // ImgUser
-            // 
-            this.ImgUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImgUser.Image = ((System.Drawing.Image)(resources.GetObject("ImgUser.Image")));
-            this.ImgUser.Location = new System.Drawing.Point(867, 2);
-            this.ImgUser.Name = "ImgUser";
-            this.ImgUser.Size = new System.Drawing.Size(43, 43);
-            this.ImgUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgUser.TabIndex = 4;
-            this.ImgUser.TabStop = false;
             // 
             // LblBibliotecaName
             // 
@@ -738,7 +723,6 @@ namespace ProyectoBiblitecaERL.Vistas
             this.Load += new System.EventHandler(this.FrmLibros_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).EndInit();
             this.GrbDatos.ResumeLayout(false);
             this.GrbDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).EndInit();
@@ -751,7 +735,6 @@ namespace ProyectoBiblitecaERL.Vistas
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox ImgUser;
         private System.Windows.Forms.Label LblBibliotecaName;
         private System.Windows.Forms.Label LblUserName;
         private System.Windows.Forms.Label LblInicio;

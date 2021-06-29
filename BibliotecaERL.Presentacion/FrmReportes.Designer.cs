@@ -29,11 +29,9 @@ namespace ProyectoBiblitecaERL.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportes));
             this.BtnPrestamos = new System.Windows.Forms.Button();
             this.BtnLibros = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ImgUser = new System.Windows.Forms.PictureBox();
             this.LblBibliotecaName = new System.Windows.Forms.Label();
             this.LblUserName = new System.Windows.Forms.Label();
             this.LblInicio = new System.Windows.Forms.Label();
@@ -42,7 +40,6 @@ namespace ProyectoBiblitecaERL.Vistas
             this.LbllInicio = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnPrestamos
@@ -72,24 +69,12 @@ namespace ProyectoBiblitecaERL.Vistas
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.ImgUser);
             this.panel1.Controls.Add(this.LblBibliotecaName);
             this.panel1.Controls.Add(this.LblUserName);
             this.panel1.Location = new System.Drawing.Point(-4, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(694, 47);
             this.panel1.TabIndex = 11;
-            // 
-            // ImgUser
-            // 
-            this.ImgUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImgUser.Image = ((System.Drawing.Image)(resources.GetObject("ImgUser.Image")));
-            this.ImgUser.Location = new System.Drawing.Point(639, 0);
-            this.ImgUser.Name = "ImgUser";
-            this.ImgUser.Size = new System.Drawing.Size(43, 43);
-            this.ImgUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgUser.TabIndex = 4;
-            this.ImgUser.TabStop = false;
             // 
             // LblBibliotecaName
             // 
@@ -201,7 +186,6 @@ namespace ProyectoBiblitecaERL.Vistas
             this.Text = "FrmReportes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,7 +196,6 @@ namespace ProyectoBiblitecaERL.Vistas
         private System.Windows.Forms.Button BtnPrestamos;
         private System.Windows.Forms.Button BtnLibros;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox ImgUser;
         private System.Windows.Forms.Label LblBibliotecaName;
         private System.Windows.Forms.Label LblUserName;
         private System.Windows.Forms.Label LblInicio;
